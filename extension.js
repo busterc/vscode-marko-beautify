@@ -3,7 +3,12 @@ var markoPrettyPrint = require('marko-prettyprint').prettyPrintSource;
 var assign = require('object-assign');
 
 exports.activate = function activate(context) {
-  console.log('"marko-beautify" is now active!');
+  var output = Output();
+  var showOutput = function (message) {
+    output(message, true)
+  };
+
+  output('"Marko Beautify" is now active!');
 
   context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider('marko', {
     provideDocumentFormattingEdits: doc => {
@@ -25,15 +30,29 @@ exports.activate = function activate(context) {
         pretty = markoPrettyPrint(ugly, prettyOptions);
       } catch (error) {
         console.error(error);
-        return vscode.window.showErrorMessage(error.message);
+        vscode.window.showErrorMessage("Marko Beautify encountered an error, see OUTPUT for details.");
+        return showOutput(error.toString());
       };
 
       return editor.edit(e => e.replace(range, pretty)).catch(error => {
         console.log(error);
-        return vscode.window.showErrorMessage(error.message);
+        vscode.window.showErrorMessage("Marko Beautify encountered an error, see OUTPUT for details.");
+        return showOutput(error.toString());
       });
     }
   }));
 };
 
 exports.deactivate = function () { };
+
+function Output() {
+  var output = vscode.window.createOutputChannel('Marko Beautify');
+
+  return function (message, show) {
+    output.clear();
+    output.append(message);
+    if (show) {
+      output.show();
+    }
+  };
+}

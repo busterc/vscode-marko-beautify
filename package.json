@@ -1,8 +1,8 @@
 {
   "name": "marko-beautify",
-  "displayName": "marko-beautify",
+  "displayName": "Marko Beautify",
   "description": "Beautify Marko code, in place, for VS Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "buster",
   "engines": {
     "vscode": "^1.11.0"
@@ -20,7 +20,7 @@
   "main": "./extension",
   "contributes": {
     "configuration": {
-      "title": "marko-beautify configuration",
+      "title": "Marko Beautify Configuration",
       "properties": {
         "marko.beautify.eol": {
           "description": "The EOL sequence.",
@@ -62,9 +62,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/busterc/marko-beautify"
+    "url": "https://github.com/busterc/vscode-marko-beautify"
   },
   "bugs": {
-    "url": "https://github.com/busterc/marko-beautify/issues"
+    "url": "https://github.com/busterc/vscode-marko-beautify/issues"
   }
 }

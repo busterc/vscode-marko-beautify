@@ -1,4 +1,4 @@
-# marko-beautify
+# Marko Beautify
 
 > beautify Marko code, in place, for VS Code
 
@@ -17,7 +17,3 @@ Also, guess what it does if you enable `editor.formatOnSave`.
 * `marko.beautify.indent`: The indent string (defaults to two spaces)
 * `marko.beautify.maxLen`: The max line length (defaults to -1 to disable)
 * `marko.beautify.syntax`: The syntax to use; either "html" or "concise" (defaults to "html")
-
-### 1.0.0
-
-Initial release of marko-beautify

@@ -1,5 +1,5 @@
 var vscode = require('vscode');
-var markoPrettyPrint = require('marko-prettyprint').prettyPrintSource;
+var markoPrettyPrint = require('@marko/prettyprint').prettyPrintSource;
 var assign = require('object-assign');
 
 exports.activate = function activate(context) {

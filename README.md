@@ -1,4 +1,4 @@
-# Marko Beautify
+# Marko Beautify [![Version](https://vsmarketplacebadge.apphb.com/version/buster.marko-beautify.svg)](https://marketplace.visualstudio.com/items?itemName=buster.marko-beautify)
 
 > beautify Marko code, in place, for VS Code
 

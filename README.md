@@ -2,7 +2,9 @@
 
 > beautify Marko code, in place, for VS Code
 
-* built on top of [marko-prettyprint](https://github.com/marko-js/marko-prettyprint)
+- built on top of [@marko/prettyprint](https://github.com/marko-js/cli/tree/master/packages/prettyprint)
+
+![](https://i.imgur.com/nt9GKaS.gif)
 
 ## How to Use
 
@@ -13,7 +15,7 @@ Also, guess what it does if you enable `editor.formatOnSave`.
 
 ## Extension Settings
 
-* `marko.beautify.eol`: The EOL sequence (defaults to "\n")
-* `marko.beautify.indent`: The indent string (defaults to two spaces)
-* `marko.beautify.maxLen`: The max line length (defaults to -1 to disable)
-* `marko.beautify.syntax`: The syntax to use; either "html" or "concise" (defaults to "html")
+- `marko.beautify.eol`: The EOL sequence (defaults to "\n")
+- `marko.beautify.indent`: The indent string (defaults to two spaces)
+- `marko.beautify.maxLen`: The max line length (defaults to -1 to disable)
+- `marko.beautify.syntax`: The syntax to use; either "html" or "concise" (defaults to "html")

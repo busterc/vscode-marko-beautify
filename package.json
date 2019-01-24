@@ -2,7 +2,7 @@
   "name": "marko-beautify",
   "displayName": "Marko Beautify",
   "description": "Beautify Marko code, in place, for VS Code",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "publisher": "buster",
   "engines": {
     "vscode": "^1.11.0"
